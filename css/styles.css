@@ -1,168 +1,127 @@
+@charset "UTF-8";
+/* General Styles */
+/* Estilos generales que aplican a todos los elementos */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Body Styles */
+/* Estilos para el cuerpo del documento */
 body {
-    font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
+/* Header Styles */
+/* Estilos para el encabezado del sitio */
 header {
-    background-color: #2c2c2c;
-    padding: 10px 0;
-    text-align: center;
+  background-color: #2c2c2c;
+  padding: 10px 0;
+  text-align: center;
 }
 
 header .logo-img {
-    max-width: 150px;
+  max-width: 150px;
 }
 
+/* Navbar Styles */
+/* Estilos para la barra de navegación */
 nav.navbar {
-    background-color: #333;
+  background-color: #333;
 }
 
 nav.navbar .navbar-brand {
-    display: none;
+  display: none;
 }
 
 .navbar-toggler {
-    margin: 0 auto;
+  margin: 0;
 }
 
+/* Navbar Link Styles */
+/* Estilos para los enlaces de la barra de navegación */
 .navbar-nav .nav-item .nav-link {
-    color: #fff;
-    font-weight: bold;
-    margin: 0 15px;
-    text-decoration: none;
-    transition: color 0.3s ease, background-color 0.3s ease;
+  color: #fff;
+  font-weight: bold;
+  margin: 0 15px;
+  text-decoration: none;
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
-
 .navbar-nav .nav-item .nav-link:hover {
-    color: #ffcc00;
-    background-color: rgba(255, 255, 255, 0.1);
+  color: #ffcc00;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
-main {
-    padding: 20px;
+/* Section Styles */
+/* Estilos para las secciones del contenido */
+section {
+  padding: 60px 0;
 }
 
-h1, h2, h3 {
-    color: #ffcc00;
-}
-
+/* Banner Styles */
+/* Estilos para el banner */
 .banner {
-    width: 100%;
+  width: 100%;
 }
 
 .banner-img {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
+/* Image Container Styles */
+/* Estilos para los contenedores de imágenes */
 .contenedor-imagen img {
-    width: 100%;
-    max-width: 600px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+.contenedor-imagen img:hover {
+  transform: scale(1.05);
 }
 
+/* Footer Styles */
+/* Estilos para el pie de página */
 footer {
-    background-color: #2c2c2c;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
+  background-color: #2c2c2c;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
 }
-
 footer .social-icons {
-    margin: 10px 0;
+  margin: 10px 0;
 }
-
 footer .social-icons a {
-    color: #fff;
-    margin: 0 10px;
-    text-decoration: none;
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
 }
 
+/* Responsive Styles */
+/* Estilos responsivos */
 @media screen and (max-width: 768px) {
-    nav .navbar-brand {
-        display: none;
-    }
-
-    .navbar-toggler {
-        display: block;
-        margin: 0 auto;
-    }
-
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
+  nav .navbar-brand {
+    display: none;
+  }
+  .navbar-toggler {
+    display: block;
+    margin: 0 auto;
+  }
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+  nav ul li {
+    margin: 10px 0;
+  }
+  .contenedor-imagen img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
-  
-
-
-  
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
+/*# sourceMappingURL=styles.css.map */
