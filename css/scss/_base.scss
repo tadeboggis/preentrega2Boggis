@@ -1,0 +1,70 @@
+// Estilos generales
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-family;
+    margin: 0;
+    padding: 0;
+}
+
+// Encabezado
+header {
+    background-color: $bg-dark;
+    padding: 10px 0;
+    text-align: center;
+
+    .logo-img {
+        max-width: 150px;
+    }
+}
+
+// Sección principal
+main {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    h1 {
+        color: $primary-color;
+        margin: 10px 0;
+        padding-bottom: 10px;
+    }
+
+    p {
+        margin-bottom: 15px;
+    }
+
+    .contenedor-imagen {
+        margin-top: 10px;
+        @include flex-center;
+
+        img {
+                max-width: $max-width-image;
+                width: 100%;
+                height: auto;
+                margin: 0 auto;
+                display: block;
+                @include box-shadow;
+                object-fit: cover;
+                transition: transform 0.3s ease-in-out;
+                border-radius: 10px;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+// Ajustes para el banner específico del index
+.banner-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+

@@ -1,158 +1,122 @@
-// Variables
-$primary-color: #ffcc00;
-$secondary-color: #333;
-$text-color: #fff;
-$bg-dark: #2c2c2c;
-$font-family: 'Roboto', sans-serif;
-$max-width-content: 600px; 
-
-// Estilos generales
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: $font-family;
-}
-
-// Estilos del encabezado
-header {
-    background-color: $bg-dark;
-    padding: 10px 0;
-    text-align: center;
-
-    .logo-img {
-        max-width: 150px;
-    }
-}
-
-// Estilos de la barra de navegación
-nav.navbar {
-    background-color: $secondary-color;
-
-    .navbar-toggler {
-        margin: 0 auto;
-    }
-
-    .navbar-nav .nav-link {
-        color: $text-color;
-        font-weight: bold;
-        margin: 0 15px;
-        text-decoration: none;
-        transition: color 0.3s ease, background-color 0.3s ease;
-
-        &:hover {
-            color: $primary-color;
-            background-color: rgba(255, 255, 255, 0.1);
-        }
-    }
-}
-
-// Estilos de la sección principal
-section {
-    padding: 60px 0;
-    text-align: center;
-
-    h1 {
-        color: $primary-color;
-        margin-bottom: 20px;
-    }
-
-    .lead {
-        font-size: 1.25rem;
-        margin-bottom: 20px;
-    }
-
-    .content-wrapper {
-        max-width: 800px;
-        margin: 0 auto;
-    }
-}
-
-// Estilos de la sección "Nosotros"
-.nosotros-section {
-    margin-top: 50px;
-
-    h1 {
-        color: $primary-color;
-        margin-bottom: 20px;
-    }
-
-    .contenedor-imagen {
-        margin-top: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        img {
-            max-width: $max-width-content;
-            width: 100%;
-            height: auto;
-            margin: 0 auto;
-            display: block;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-            object-fit: cover;
-            transition: transform 0.3s ease-in-out;
-
-            &:hover {
-                transform: scale(1.05);
-            }
-        }
-    }
-
-    .text-center p {
-        margin-bottom: 20px;
-        text-align: center;
-    }
-}
-
-// Estilos del banner
-.banner {
-    width: 100%;
-}
-
-.banner-img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-// Estilos del footer
-footer {
-    background-color: $bg-dark;
-    color: $text-color;
-    padding: 10px 0;
-    text-align: center;
-
-    .social-icons {
-        margin: 10px 0;
-
-        a {
-            color: $text-color;
-            margin: 0 10px;
-            text-decoration: none;
-        }
-    }
-}
+@import 'variables';
+@import 'mixins';
+@import 'base';
+@import 'navbar';
+@import 'footer';
 
 // Estilos responsive
 @media screen and (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
     .contenedor-imagen img {
         max-width: 100%;
         height: auto;
     }
+
+    nav.navbar .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .social-icons {
+        flex-direction: row;
+        justify-content: center;
+    }
 }
+
+// Estilos específicos para (768x1024) en "Preguntas Frecuentes" y "Contacto"
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    body.preguntas-frecuentes-page,
+    body.contacto-page {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    main {
+        flex: 1;
+    }
+
+    footer {
+        margin-top: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
